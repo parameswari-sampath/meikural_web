@@ -1,0 +1,116 @@
+header {
+  background-color: var(--header-bg);
+  border-radius: 8px;
+  margin: 12px auto;
+  padding: 10px 20px;
+  border: 1px solid rgba(24, 119, 242, 0.1); /* updated border tint */
+  box-shadow: 0 2px 10px rgba(24, 119, 242, 0.05); /* updated soft blue glow */
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 12px;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-blue); /* updated */
+  letter-spacing: -0.3px;
+}
+
+.logo img {
+  height: 36px;
+  margin-right: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-blue); /* updated */
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.mobile-menu-button span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 4px 0;
+  background-color: var(--primary-blue); /* updated */
+  transition: all 0.3s ease;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  header {
+    margin: 10px auto;
+    padding: 8px 16px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(24, 119, 242, 0.1); /* updated */
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+  }
+}

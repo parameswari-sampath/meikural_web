@@ -1,0 +1,41 @@
+.companies {
+  padding: 60px 0;
+  /* background-color: var(--light-blue); Light background for contrast */
+  text-align: center;
+}
+
+.companies-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.company-logos img {
+  height: 60px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.company-logos img:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .company-logos {
+    gap: 24px;
+  }
+
+  .company-logos img {
+    height: 32px;
+  }
+}

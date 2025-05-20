@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meikurai - Modern Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-jQDNwIMKqun3gdqY9J3RMd+fLIm0KQAw8D3hgcDw/7E4I1ASuqrszPzHHfpy07KryZu7A1h5NT7vKkFt4VdO9g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/companies.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/features.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">
+            <img src="assets/logo.png" alt="Meikurai Logo" />
+          </div>
+          <button class="mobile-menu-button" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero full-screen-hero">
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1>Elevating Design<br />With Bold Simplicity</h1>
+            <p>
+              Meikurai blends aesthetics and performance to craft visually
+              stunning digital experiences. Make your first impression count.
+            </p>
+            <a href="#" class="cta-button">View Our Work</a>
+          </div>
+          <div class="hero-right">
+            <img src="https://placehold.co/500x500.png" alt="Product mockup" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: About -->
+      <section class="companies">
+        <div class="companies-inner">
+          <p class="companies-title">Trusted by Brands</p>
+          <div class="company-logos">
+            <img src="https://placehold.co/120x40" alt="Company 1" />
+            <img src="https://placehold.co/120x40" alt="Company 2" />
+            <img src="https://placehold.co/120x40" alt="Company 3" />
+            <img src="https://placehold.co/120x40" alt="Company 4" />
+            <img src="https://placehold.co/120x40" alt="Company 5" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Services -->
+      <section class="services-section">
+        <div class="services-container">
+          <div class="services-text">
+            <h2>What We Do</h2>
+            <p>
+              Build solutions across platforms with flexibility and precision.
+            </p>
+            <ul class="services-list">
+              <li
+                class="service-item active"
+                data-title="Web Development"
+                data-description="Robust, scalable websites using modern technologies tailored for performance and usability."
+                data-image="https://placehold.co/600x500"
+              >
+                Web Development
+              </li>
+              <li
+                class="service-item"
+                data-title="Android & iOS Development"
+                data-description="Build native and cross-platform mobile apps with intuitive design and seamless performance."
+                data-image="https://placehold.co/600x500"
+              >
+                Android & iOS Development
+              </li>
+              <li
+                class="service-item"
+                data-title="Desktop App Development"
+                data-description="Powerful and user-friendly desktop applications for Windows, macOS, and Linux."
+                data-image="https://placehold.co/600x500"
+              >
+                Desktop App Development
+              </li>
+              <li
+                class="service-item"
+                data-title="E-commerce Solutions"
+                data-description="Complete e-commerce platforms with secure payment, inventory management, and customer features."
+                data-image="https://placehold.co/600x500"
+              >
+                E-commerce Solutions
+              </li>
+              <li
+                class="service-item"
+                data-title="Custom Web Applications"
+                data-description="Tailored web solutions designed to meet your unique business workflows and goals."
+                data-image="https://placehold.co/600x500"
+              >
+                Custom Web Applications
+              </li>
+            </ul>
+          </div>
+
+          <div class="services-preview-card" id="servicePreview">
+            <div class="preview-image">
+              <img
+                src="https://placehold.co/600x500"
+                alt="Service preview"
+                id="previewImage"
+              />
+            </div>
+            <div class="preview-content">
+              <h3 id="previewTitle">Web Development</h3>
+              <p id="previewDescription">
+                Robust, scalable websites using modern technologies tailored for
+                performance and usability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Portfolio -->
+      <section class="features-section" id="features">
+        <h2 class="features-heading">Powerful Features Built In</h2>
+        <p class="features-subheading">
+          Everything you need to deliver scalable, secure, and interactive
+          applications.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <img
+              src="assets/icons/credit-card-regular.svg"
+              alt="Payments Icon"
+              class="feature-icon"
+            />
+            <h3>Payments</h3>
+            <p>
+              Secure, fast, and flexible payment integrations for your business.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icons/comment-regular.svg"
+              alt="Messaging Icon"
+              class="feature-icon"
+            />
+            <h3>Messaging</h3>
+            <p>Built-in messaging to keep your users connected and engaged.</p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icons/shield-halved-solid.svg"
+              alt="Security Icon"
+              class="feature-icon"
+            />
+            <h3>Security</h3>
+            <p>
+              Advanced protection with modern authentication and encryption.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icons/chart-line-solid.svg"
+              alt="Analytics Icon"
+              class="feature-icon"
+            />
+            <h3>Analytics</h3>
+            <p>Track performance and user behavior with real-time insights.</p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icons/headset-solid.svg"
+              alt="Support Icon"
+              class="feature-icon"
+            />
+            <h3>Support</h3>
+            <p>
+              24/7 technical support to assist you and your customers anytime.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icons/folder-open-regular.svg"
+              alt="File Storage Icon"
+              class="feature-icon"
+            />
+            <h3>Storage</h3>
+            <p>Cloud-based file and data storage for your apps and users.</p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icons/bell-regular.svg"
+              alt="Notifications Icon"
+              class="feature-icon"
+            />
+            <h3>Notifications</h3>
+            <p>
+              Stay in touch with instant alerts and customizable notifications.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <img
+              src="assets/icons/plug-solid.svg"
+              alt="Integrations Icon"
+              class="feature-icon"
+            />
+            <h3>Integrations</h3>
+            <p>
+              Connect with 3rd-party services through robust APIs and tools.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Testimonials -->
+      <section class="section section-blue">
+        <i class="fa-solid fa-money-bill-1-wave"></i>
+      </section>
+
+      <!-- Section 5: Call to Action -->
+      <section class="section section-light"></section>
+
+      <!-- Section 6: Contact -->
+      <section class="section section-white"></section>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/services.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

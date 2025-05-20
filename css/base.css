@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-blue: #1877f2; /* Facebook Blue */
+  --dark-blue: #145dbf; /* Darker shade */
+  --light-blue: #a3c9f9; /* Lighter shade */
+  --background: #ffffff; /* Keep white background */
+  --text-dark: #222; /* Same as before for contrast */
+  --text-light: #555; /* Same */
+  --header-bg: rgba(255, 255, 255, 0.95); /* Same translucent white */
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Breakpoints */
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+}

@@ -1,0 +1,12 @@
+/* Background color variations based on theme */
+.section-blue {
+  background-color: var(--primary-blue);
+}
+
+.section-light {
+  background-color: var(--light-blue);
+}
+
+.section-white {
+  background-color: var(--background);
+}
